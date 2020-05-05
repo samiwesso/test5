@@ -1,13 +1,14 @@
 
-    <div class="">
-        <div  class="col-md-3 col-sm-6">
-            <div class="product-grid2">
+    <div class="row">
+        <!-- <div  class="col-md-3 col-sm-6"> -->
+            <div>
+            <div class="product-grid2 mx-1">
                 <div class="product-image2">
                     <a routerLink="/product-info">
                         <img class="pic-1" src="{{ product.img }}">
                         
                     </a>
-                    <a class="add-to-cart" [routerLink]="['/cart', { id:product.id }]">Add to cart</a>
+                    <a class="add-to-cart" [routerLink]="[ { id:product.id }]">Add to cart</a>
                 </div>
                 <div class="product-content">
                     <h3 class="title"><a href="#">{{ product.name }}</a></h3>
@@ -15,7 +16,7 @@
                 </div>
             </div>
         </div>
-  </div> 
+    </div>
   
 
 <!-- <app-navigation></app-navigation>
